@@ -1,0 +1,105 @@
+body {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 100px 36px 0;
+}
+
+$titel-color:  #444444;
+#titel {
+    text-align: left;
+    font: normal normal bold 48px/55px Arial;
+    letter-spacing: 0px;
+    color: $titel-color;
+    margin-bottom: 48px;
+}
+
+$block: '.news-block';
+.news-blocks {
+    display: flex;
+    gap: 30px;
+    .news-block {
+
+        &__img {
+            max-width: 100%;
+            position: relative;
+            transition: opacity 200ms ease-in-out;
+        }
+        &__titel {
+            text-align: left;
+            font: normal normal bold 16px/18px Arial;
+            letter-spacing: 0px;
+            color: $titel-color;
+        }
+
+        &:hover {
+            .news-block__img {
+                opacity: 0.85;
+            }
+        }
+
+    }
+    #{$block} {
+
+        #{$block}__img {
+            max-width: 100%;
+            position: relative;
+            transition: opacity 200ms ease-in-out;
+        }
+        #{$block}__titel {
+            text-align: left;
+            font: normal normal bold 16px/18px Arial;
+            letter-spacing: 0px;
+            color: $titel-color;
+        }
+
+        #{$block}:hover {
+            #{$block}__img {
+                opacity: 0.85;
+            }
+        }
+
+    }
+    .news-block--1 {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 30px;
+        position: relative;
+        .news-block__txt{
+            margin: 0px;
+            bottom: 30px;
+            left: 20px;
+            text-align: left;
+            font: normal normal bold 24px/28px Arial;
+            letter-spacing: 0px;
+            color: #F6F6F6;
+            position: absolute;
+            }
+        }
+    .news-block--2 {
+        text-decoration: none;
+        flex-grow: 1;
+        gap: 20px;
+        .news-block__txt {
+            text-align: left;
+            font: normal normal normal 16px/18px Arial;
+            letter-spacing: 0px;
+            color: $titel-color;
+        }
+        .news-block__img {
+            width: 500vh;
+        }
+    }
+}
+
+@media (max-width: 525px) {
+    .news-blocks {
+        display: flex;
+        flex-direction: column;
+        .news-block--1 {
+            gap: 0;
+            .news-block__txt{
+                font: normal normal bold 18px/20px Arial;
+            }
+        }
+    }
+}

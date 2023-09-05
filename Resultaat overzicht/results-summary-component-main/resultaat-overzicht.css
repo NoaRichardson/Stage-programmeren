@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  height: 100%;
+  font-size: 18px;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-block {
+  width: 50%;
+  background-color: hsl(252, 100%, 67%);
+}/*# sourceMappingURL=resultaat-overzicht.css.map */
