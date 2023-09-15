@@ -196,11 +196,6 @@ body {
   font-weight: 700;
   line-height: normal;
 }
-@media (max-width: 602px) {
-  .summary-block__overview .summary-block__reaction__score--1 {
-    padding-left: 34%;
-  }
-}
 .summary-block__overview .summary-block__reaction__score--2 {
   font-family: "Hanken Grotesk", sans-serif;
   color: #9BA0B3;
@@ -214,6 +209,7 @@ body {
   align-items: center;
   margin-bottom: 16px;
   height: 90%;
+  justify-content: space-between;
 }
 .summary-block__overview .summary-block__memory__text {
   display: flex;
@@ -242,14 +238,10 @@ body {
   font-weight: 700;
   line-height: normal;
 }
-@media (max-width: 602px) {
-  .summary-block__overview .summary-block__memory__score--1 {
-    padding-left: 34%;
-  }
-}
 .summary-block__overview .summary-block__memory__score--2 {
   font-family: "Hanken Grotesk", sans-serif;
   color: #9BA0B3;
+  padding-right: 10px;
 }
 .summary-block__overview .summary-block__verbal {
   display: flex;
@@ -259,6 +251,7 @@ body {
   align-items: center;
   margin-bottom: 16px;
   height: 90%;
+  justify-content: space-between;
 }
 .summary-block__overview .summary-block__verbal__text {
   display: flex;
@@ -286,14 +279,10 @@ body {
   font-weight: 700;
   line-height: normal;
 }
-@media (max-width: 602px) {
-  .summary-block__overview .summary-block__verbal__score--1 {
-    padding-left: 38%;
-  }
-}
 .summary-block__overview .summary-block__verbal__score--2 {
   font-family: "Hanken Grotesk", sans-serif;
   color: #9BA0B3;
+  padding-right: 10px;
 }
 .summary-block__overview .summary-block__visual {
   display: flex;
@@ -302,6 +291,7 @@ body {
   border-radius: 10px;
   align-items: center;
   height: 90%;
+  justify-content: space-between;
 }
 .summary-block__overview .summary-block__visual__text {
   display: flex;
@@ -329,14 +319,10 @@ body {
   font-weight: 700;
   line-height: normal;
 }
-@media (max-width: 602px) {
-  .summary-block__overview .summary-block__visual__score--1 {
-    padding-left: 38%;
-  }
-}
 .summary-block__overview .summary-block__visual__score--2 {
   font-family: "Hanken Grotesk", sans-serif;
   color: #9BA0B3;
+  padding-right: 10px;
 }
 .summary-block__button {
   background-color: hsl(224, 30%, 27%);

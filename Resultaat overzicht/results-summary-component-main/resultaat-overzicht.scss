@@ -133,7 +133,7 @@ $Cobalt-blue: hsl(234, 85%, 45%);
 
 #{$S-block} {
     background-color: white;
-    width: 50%;;
+    width: 50%;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     @media (max-width: 602px){
@@ -192,9 +192,6 @@ $Cobalt-blue: hsl(234, 85%, 45%);
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
-                @media (max-width: 602px){
-                    padding-left: 34%;
-                }
             }
             &--2 {
                 font-family: $hanken;
@@ -211,6 +208,7 @@ $Cobalt-blue: hsl(234, 85%, 45%);
             align-items: center;
             margin-bottom: 16px;
             height: 90%;
+            justify-content: space-between;
             &__text {
                 display: flex;
                 flex-direction: row;
@@ -236,13 +234,11 @@ $Cobalt-blue: hsl(234, 85%, 45%);
                     font-style: normal;
                     font-weight: 700;
                     line-height: normal;
-                    @media (max-width: 602px){
-                        padding-left: 34%;
-                    }
                 }
                 &--2 {
                     font-family: $hanken;
                     color: #9BA0B3;
+                    padding-right: 10px;
                 }
             }
         }
@@ -254,6 +250,7 @@ $Cobalt-blue: hsl(234, 85%, 45%);
             align-items: center;
             margin-bottom: 16px;
             height: 90%;
+            justify-content: space-between;
             &__text{
                 display: flex;
                 flex-direction: row;
@@ -278,13 +275,11 @@ $Cobalt-blue: hsl(234, 85%, 45%);
                     font-style: normal;
                     font-weight: 700;
                     line-height: normal;
-                    @media (max-width: 602px){
-                        padding-left: 38%;
-                    }
                 }
                 &--2 {
                     font-family: $hanken;
                     color: #9BA0B3;
+                    padding-right: 10px;
                 }
             }
         }
@@ -295,6 +290,7 @@ $Cobalt-blue: hsl(234, 85%, 45%);
             border-radius: 10px;
             align-items: center;
             height: 90%;
+            justify-content: space-between;
             &__text{
                 display: flex;
                 flex-direction: row;
@@ -319,13 +315,11 @@ $Cobalt-blue: hsl(234, 85%, 45%);
                     font-style: normal;
                     font-weight: 700;
                     line-height: normal;
-                    @media (max-width: 602px){
-                        padding-left: 38%;
-                    }
                 }
                 &--2 {
                     font-family: $hanken;
                     color: #9BA0B3;
+                    padding-right: 10px;
                 }
             }
         }
