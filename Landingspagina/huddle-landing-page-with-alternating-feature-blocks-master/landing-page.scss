@@ -21,9 +21,6 @@ $block6: '.block-6';
 
 .container{
     width: 100%;
-    @media (max-width: 1440px){
-        width: 1440px;
-    }
 }
 
 #{$block1}{
@@ -141,14 +138,9 @@ $block6: '.block-6';
     &__img-holder {
         width: 100%;
         max-width: 720.52px;
-        min-width: 380px;
         display: flex;
         @media (max-width: 768px){
-            max-width: 455.52px;
-        }
-        @media(max-width: 397px){
-            padding: 20px 50px;
-            box-sizing: border-box;
+            max-width: 455px;
         }
     }
     &__img{
@@ -190,7 +182,6 @@ $block6: '.block-6';
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 10%;
 }
 
 #{$block2} {
@@ -202,11 +193,16 @@ $block6: '.block-6';
     display: flex;
     align-items: center;
     margin-bottom: 40px;
+    margin-top: 10%;
     @media (max-width: 768px){
         flex-direction: column-reverse;
         align-items: center;
         height: 480px;
         width: 335px;
+    }
+    @media (max-width: 355px){
+        min-width: 0px;
+        width: 300px;
     }
     &__txt-block{
         display: flex;
@@ -216,7 +212,9 @@ $block6: '.block-6';
         padding: 44px 110px;
         @media (max-width: 768px){
             align-items: center;
+            padding: 0;
             padding-top: 30px;
+            padding-bottom: 50px;
         }
     }
     &__title{
@@ -270,6 +268,10 @@ $block6: '.block-6';
         height: 480px;
         width: 335px;
     }
+    @media (max-width: 355px){
+        min-width: 0px;
+        width: 300px;
+    }
     &__txt-block{
         display: flex;
         flex-direction: column;
@@ -278,7 +280,8 @@ $block6: '.block-6';
         padding: 44px 30px;
         @media (max-width: 768px){
             align-items: center;
-            padding: 50px;
+            padding: 0;
+            padding: 50px 0px;
         }
     }
     &__title{
@@ -331,6 +334,10 @@ $block6: '.block-6';
         height: 480px;
         width: 335px;
     }
+    @media (max-width: 355px){
+        min-width: 0px;
+        width: 300px;
+    }
     &__txt-block{
         display: flex;
         flex-direction: column;
@@ -339,7 +346,9 @@ $block6: '.block-6';
         padding: 44px 130px;
         @media (max-width: 768px){
             align-items: center;
+            padding: 0;
             padding-top: 30px;
+            padding-bottom: 50px;
         }
     }
     &__title{
@@ -461,22 +470,14 @@ $block6: '.block-6';
     display: flex;
     flex-direction: column;
     height: 518px;
+    margin: 30px;
     @media (max-width: 768px){
         height: 100%;
-        padding: 10%;
     }
     &__logo{
-        padding: 20px 115px;
+        padding: 20px 0px;
         box-sizing: border-box;
         display: flex;
-        @media (max-width: 1024px){
-            padding: 20px 50px;
-            display: flex;
-            justify-content: flex-start;
-        }
-        @media (max-width: 768px){
-            padding: 20px 0px;
-        }
     }
     &__txt-container{
         display: flex;
@@ -497,15 +498,10 @@ $block6: '.block-6';
         }
     }
     &__location{
-        display: flex;
+        display: grid;
+        grid-template-columns: 30px 1fr;
         &--icon{
-            width: 20%;
-            @media (max-width: 768px){
-                width: 10%;
-            }
-            @media (max-width: 375px){
-                width: 20%;
-            }
+            padding-top: 6px;
         }
         &--txt{
             color: white;
@@ -539,8 +535,10 @@ $block6: '.block-6';
         color: white;
         font-family: $Open;
         margin-right: 10%;
+        width: 15%;
         @media (max-width: 768px){
             padding: 0;
+            width: 35%;
         }
         &--txt-1{
             margin: 0;
@@ -550,6 +548,7 @@ $block6: '.block-6';
         color: white;
         font-family: $Open;
         margin-right: 10%;
+        width: 15%;
         &--txt-1{
             margin: 0;
         }
@@ -571,8 +570,11 @@ $block6: '.block-6';
             border-radius: 50%;
             border: 1px solid white;
             &:hover{
-                border-color: $pink;
+                border-color: $Pink;
                 cursor: pointer;
+                &--icon{
+                    fill: $Pink;
+                }
             }
         }
         &__twitter{
@@ -583,6 +585,13 @@ $block6: '.block-6';
             justify-content: center;
             border-radius: 50%;
             border: 1px solid white;
+            &:hover{
+                border-color: $Pink;
+                cursor: pointer;
+            }
+            &--icon :hover{
+                fill: $Pink;
+            }
         }
         &__instagram{
             width: 30px;
@@ -592,6 +601,13 @@ $block6: '.block-6';
             justify-content: center;
             border-radius: 50%;
             border: 1px solid white;
+            &:hover{
+                border-color: $Pink;
+                cursor: pointer;
+            }
+            &--icon :hover{
+                fill: $Pink;
+            }
         }
     }
     &__copyright-container{

@@ -138,18 +138,11 @@ body {
 .block-1__img-holder {
   width: 100%;
   max-width: 720.52px;
-  min-width: 380px;
   display: flex;
 }
 @media (max-width: 768px) {
   .block-1__img-holder {
-    max-width: 455.52px;
-  }
-}
-@media (max-width: 397px) {
-  .block-1__img-holder {
-    padding: 20px 50px;
-    box-sizing: border-box;
+    max-width: 455px;
   }
 }
 .block-1__img {
@@ -196,7 +189,6 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 10%;
 }
 
 .block-2 {
@@ -208,6 +200,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 40px;
+  margin-top: 10%;
 }
 @media (max-width: 768px) {
   .block-2 {
@@ -215,6 +208,12 @@ body {
     align-items: center;
     height: 480px;
     width: 335px;
+  }
+}
+@media (max-width: 355px) {
+  .block-2 {
+    min-width: 0px;
+    width: 300px;
   }
 }
 .block-2__txt-block {
@@ -227,7 +226,9 @@ body {
 @media (max-width: 768px) {
   .block-2__txt-block {
     align-items: center;
+    padding: 0;
     padding-top: 30px;
+    padding-bottom: 50px;
   }
 }
 .block-2__title {
@@ -290,6 +291,12 @@ body {
     width: 335px;
   }
 }
+@media (max-width: 355px) {
+  .block-3 {
+    min-width: 0px;
+    width: 300px;
+  }
+}
 .block-3__txt-block {
   display: flex;
   flex-direction: column;
@@ -300,7 +307,8 @@ body {
 @media (max-width: 768px) {
   .block-3__txt-block {
     align-items: center;
-    padding: 50px;
+    padding: 0;
+    padding: 50px 0px;
   }
 }
 .block-3__title {
@@ -362,6 +370,12 @@ body {
     width: 335px;
   }
 }
+@media (max-width: 355px) {
+  .block-4 {
+    min-width: 0px;
+    width: 300px;
+  }
+}
 .block-4__txt-block {
   display: flex;
   flex-direction: column;
@@ -372,7 +386,9 @@ body {
 @media (max-width: 768px) {
   .block-4__txt-block {
     align-items: center;
+    padding: 0;
     padding-top: 30px;
+    padding-bottom: 50px;
   }
 }
 .block-4__title {
@@ -500,29 +516,17 @@ body {
   display: flex;
   flex-direction: column;
   height: 518px;
+  margin: 30px;
 }
 @media (max-width: 768px) {
   .block-6 {
     height: 100%;
-    padding: 10%;
   }
 }
 .block-6__logo {
-  padding: 20px 115px;
+  padding: 20px 0px;
   box-sizing: border-box;
   display: flex;
-}
-@media (max-width: 1024px) {
-  .block-6__logo {
-    padding: 20px 50px;
-    display: flex;
-    justify-content: flex-start;
-  }
-}
-@media (max-width: 768px) {
-  .block-6__logo {
-    padding: 20px 0px;
-  }
 }
 .block-6__txt-container {
   display: flex;
@@ -547,20 +551,11 @@ body {
   }
 }
 .block-6__location {
-  display: flex;
+  display: grid;
+  grid-template-columns: 30px 1fr;
 }
 .block-6__location--icon {
-  width: 20%;
-}
-@media (max-width: 768px) {
-  .block-6__location--icon {
-    width: 10%;
-  }
-}
-@media (max-width: 375px) {
-  .block-6__location--icon {
-    width: 20%;
-  }
+  padding-top: 6px;
 }
 .block-6__location--txt {
   color: white;
@@ -593,10 +588,12 @@ body {
   color: white;
   font-family: "Open Sans", sans-serif;
   margin-right: 10%;
+  width: 15%;
 }
 @media (max-width: 768px) {
   .block-6__info-block-2 {
     padding: 0;
+    width: 35%;
   }
 }
 .block-6__info-block-2--txt-1 {
@@ -606,6 +603,7 @@ body {
   color: white;
   font-family: "Open Sans", sans-serif;
   margin-right: 10%;
+  width: 15%;
 }
 .block-6__info-block-3--txt-1 {
   margin: 0;
@@ -630,6 +628,13 @@ body {
   border-radius: 50%;
   border: 1px solid white;
 }
+.block-6__info-block-4__facebook:hover {
+  border-color: hsl(322, 100%, 66%);
+  cursor: pointer;
+}
+.block-6__info-block-4__facebook:hover--icon {
+  fill: hsl(322, 100%, 66%);
+}
 .block-6__info-block-4__twitter {
   width: 30px;
   height: 30px;
@@ -639,6 +644,13 @@ body {
   border-radius: 50%;
   border: 1px solid white;
 }
+.block-6__info-block-4__twitter:hover {
+  border-color: hsl(322, 100%, 66%);
+  cursor: pointer;
+}
+.block-6__info-block-4__twitter--icon :hover {
+  fill: hsl(322, 100%, 66%);
+}
 .block-6__info-block-4__instagram {
   width: 30px;
   height: 30px;
@@ -647,6 +659,13 @@ body {
   justify-content: center;
   border-radius: 50%;
   border: 1px solid white;
+}
+.block-6__info-block-4__instagram:hover {
+  border-color: hsl(322, 100%, 66%);
+  cursor: pointer;
+}
+.block-6__info-block-4__instagram--icon :hover {
+  fill: hsl(322, 100%, 66%);
 }
 .block-6__copyright-container {
   color: white;
